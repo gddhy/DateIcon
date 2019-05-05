@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hy.dateicon">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.NoDisplay"
+        tools:ignore="GoogleAppIndexingWarning">
+        <receiver android:name=".BootReceiver">
+            <intent-filter>
+
+                <!-- 解锁广播 -->
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <!-- 开机广播 -->
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".Date0Activity"
+            android:enabled="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcut" />
+        </activity>
+
+        <activity-alias
+            android:name=".Date31Activity"
+            android:enabled="false"
+            android:icon="@drawable/calendar_icon_31"
+            android:label="@string/app_date"
+            android:targetActivity=".Date0Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcut" />
+        </activity-alias>
+        <activity-alias
+            android:name=".Date30Activity"
+            android:enabled="false"
+            android:icon="@drawable/calendar_icon_30"
+            android:label="@string/app_date"
+            android:targetActivity=".Date0Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcut" />
+        </activity-alias>
+        <activity-alias
+            android:name=".Date29Activity"
+            android:enabled="false"
+            android:icon="@drawable/calendar_icon_29"
+            android:label="@string/app_date"
+            android:targetActivity=".Date0Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcut" />
+        </activity-alias>
+        <activity-alias
+            android:name=".Date28Activity"
+            android:enabled="false"
+            android:icon="@drawable/calendar_icon_28"
+            android:label="@string/app_date"
+            android:targetActivity=".Date0Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcut" />
+        </activity-alias>
+        <activity-alias
+            android:name=".Date27Activity"
+            android:enabled="false"
+            android:icon="@drawable/calendar_icon_27"
+            android:label="@string/app_date"
+            android:targetActivity=".Date0Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcut" />
+        </activity-alias>
+        <activity-alias
+            android:name=".Date26Activity"
+            android:enabled="false"
+            android:icon="@drawable/calendar_icon_26"
+            android:label="@string/app_date"
+            android:targetActivity=".Date0Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcut" />
+        </activity-alias>
+        <activity-alias
+            android:name=".Date25Activity"
+            android:enabled="false"
+            android:icon="@drawable/calendar_icon_25"
+            android:label="@string/app_date"
+            android:targetActivity=".Date0Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcut" />
+        </activity-alias>
+        <activity-alias
+            android:name=".Date24Activity"
+            android:enabled="false"
+            android:icon="@drawable/calendar_icon_24"
+            android:label="@string/app_date"
+            android:targetActivity=".Date0Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcut" />
+        </activity-alias>
+        <activity-alias
+            android:name=".Date23Activity"
+            android:enabled="false"
+            android:icon="@drawable/calendar_icon_23"
+            android:label="@string/app_date"
+            android:targetActivity=".Date0Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcut" />
+        </activity-alias>
+        <activity-alias
+            android:name=".Date22Activity"
+            android:enabled="false"
+            android:icon="@drawable/calendar_icon_22"
+            android:label="@string/app_date"
+            android:targetActivity=".Date0Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcut" />
+        </activity-alias>
+        <activity-alias
+            android:name=".Date21Activity"
+            android:enabled="false"
+            android:icon="@drawable/calendar_icon_21"
+            android:label="@string/app_date"
+            android:targetActivity=".Date0Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcut" />
+        </activity-alias>
+        <activity-alias
+            android:name=".Date20Activity"
+            android:enabled="false"
+            android:icon="@drawable/calendar_icon_20"
+            android:label="@string/app_date"
+            android:targetActivity=".Date0Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcut" />
+        </activity-alias>
+        <activity-alias
+            android:name=".Date19Activity"
+            android:enabled="false"
+            android:icon="@drawable/calendar_icon_19"
+            android:label="@string/app_date"
+            android:targetActivity=".Date0Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcut" />
+        </activity-alias>
+        <activity-alias
+            android:name=".Date18Activity"
+            android:enabled="false"
+            android:icon="@drawable/calendar_icon_18"
+            android:label="@string/app_date"
+            android:targetActivity=".Date0Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcut" />
+        </activity-alias>
+        <activity-alias
+            android:name=".Date17Activity"
+            android:enabled="false"
+            android:icon="@drawable/calendar_icon_17"
+            android:label="@string/app_date"
+            android:targetActivity=".Date0Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcut" />
+        </activity-alias>
+        <activity-alias
+            android:name=".Date16Activity"
+            android:enabled="false"
+            android:icon="@drawable/calendar_icon_16"
+            android:label="@string/app_date"
+            android:targetActivity=".Date0Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcut" />
+        </activity-alias>
+        <activity-alias
+            android:name=".Date15Activity"
+            android:enabled="false"
+            android:icon="@drawable/calendar_icon_15"
+            android:label="@string/app_date"
+            android:targetActivity=".Date0Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcut" />
+        </activity-alias>
+        <activity-alias
+            android:name=".Date14Activity"
+            android:enabled="false"
+            android:icon="@drawable/calendar_icon_14"
+            android:label="@string/app_date"
+            android:targetActivity=".Date0Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcut" />
+        </activity-alias>
+        <activity-alias
+            android:name=".Date13Activity"
+            android:enabled="false"
+            android:icon="@drawable/calendar_icon_13"
+            android:label="@string/app_date"
+            android:targetActivity=".Date0Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcut" />
+        </activity-alias>
+        <activity-alias
+            android:name=".Date12Activity"
+            android:enabled="false"
+            android:icon="@drawable/calendar_icon_12"
+            android:label="@string/app_date"
+            android:targetActivity=".Date0Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcut" />
+        </activity-alias>
+        <activity-alias
+            android:name=".Date11Activity"
+            android:enabled="false"
+            android:icon="@drawable/calendar_icon_11"
+            android:label="@string/app_date"
+            android:targetActivity=".Date0Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcut" />
+        </activity-alias>
+        <activity-alias
+            android:name=".Date10Activity"
+            android:enabled="false"
+            android:icon="@drawable/calendar_icon_10"
+            android:label="@string/app_date"
+            android:targetActivity=".Date0Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcut" />
+        </activity-alias>
+        <activity-alias
+            android:name=".Date9Activity"
+            android:enabled="false"
+            android:icon="@drawable/calendar_icon_9"
+            android:label="@string/app_date"
+            android:targetActivity=".Date0Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcut" />
+        </activity-alias>
+        <activity-alias
+            android:name=".Date8Activity"
+            android:enabled="false"
+            android:icon="@drawable/calendar_icon_8"
+            android:label="@string/app_date"
+            android:targetActivity=".Date0Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcut" />
+        </activity-alias>
+        <activity-alias
+            android:name=".Date7Activity"
+            android:enabled="false"
+            android:icon="@drawable/calendar_icon_7"
+            android:label="@string/app_date"
+            android:targetActivity=".Date0Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcut" />
+        </activity-alias>
+        <activity-alias
+            android:name=".Date6Activity"
+            android:enabled="false"
+            android:icon="@drawable/calendar_icon_6"
+            android:label="@string/app_date"
+            android:targetActivity=".Date0Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcut" />
+        </activity-alias>
+        <activity-alias
+            android:name=".Date5Activity"
+            android:enabled="false"
+            android:icon="@drawable/calendar_icon_5"
+            android:label="@string/app_date"
+            android:targetActivity=".Date0Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcut" />
+        </activity-alias>
+        <activity-alias
+            android:name=".Date4Activity"
+            android:enabled="false"
+            android:icon="@drawable/calendar_icon_4"
+            android:label="@string/app_date"
+            android:targetActivity=".Date0Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcut" />
+        </activity-alias>
+        <activity-alias
+            android:name=".Date3Activity"
+            android:enabled="false"
+            android:icon="@drawable/calendar_icon_3"
+            android:label="@string/app_date"
+            android:targetActivity=".Date0Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcut" />
+        </activity-alias>
+        <activity-alias
+            android:name=".Date2Activity"
+            android:enabled="false"
+            android:icon="@drawable/calendar_icon_2"
+            android:label="@string/app_date"
+            android:targetActivity=".Date0Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcut" />
+        </activity-alias>
+        <activity-alias
+            android:name=".Date1Activity"
+            android:enabled="false"
+            android:icon="@drawable/calendar_icon_1"
+            android:label="@string/app_date"
+            android:targetActivity=".Date0Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcut" />
+        </activity-alias>
+
+        <activity android:name=".upDateIconActivity" />
+        <activity android:name=".DefaultIcon" />
+        <activity
+            android:name=".upDateIcon"
+            android:label="@string/update">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SetDefaultAppActivity"
+            android:theme="@style/AppTheme" />
+
+        <service
+            android:name=".UpdateService"
+            android:enabled="true"
+            android:exported="true"></service>
+    </application>
+
+</manifest>

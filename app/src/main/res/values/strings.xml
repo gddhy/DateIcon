@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">动态日历图标</string>
+    <string name="app_date">日历</string>
+    <string name="update">更新图标</string>
+    <string name="default_icon">默认图标</string>
+    <string name="setApp">默认应用</string>
+</resources>

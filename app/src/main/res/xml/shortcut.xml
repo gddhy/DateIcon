@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="upDateIcon"
+        android:enabled="true"
+        android:icon="@drawable/calendar_icon_1"
+        android:shortcutShortLabel="@string/update"
+        android:shortcutLongLabel="@string/update"
+        android:shortcutDisabledMessage="@string/update"
+        tools:targetApi="n_mr1">
+
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.hy.dateicon"
+            android:targetClass="com.hy.dateicon.upDateIconActivity" />
+        <!--android.shortcut.conversation   描述当前的intent的执行环境 目前google官方提供的只有这个-->
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="setDefaultApp"
+        android:enabled="true"
+        android:icon="@drawable/calendar_icon_1"
+        android:shortcutShortLabel="@string/setApp"
+        android:shortcutLongLabel="@string/setApp"
+        android:shortcutDisabledMessage="@string/setApp"
+        tools:targetApi="n_mr1">
+
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.hy.dateicon"
+            android:targetClass="com.hy.dateicon.SetDefaultAppActivity" />
+        <!--android.shortcut.conversation   描述当前的intent的执行环境 目前google官方提供的只有这个-->
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="upDefaultIcon"
+        android:enabled="true"
+        android:icon="@drawable/calendar_icon_1"
+        android:shortcutShortLabel="@string/default_icon"
+        android:shortcutLongLabel="@string/default_icon"
+        android:shortcutDisabledMessage="@string/default_icon"
+        tools:targetApi="n_mr1">
+
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.hy.dateicon"
+            android:targetClass="com.hy.dateicon.DefaultIcon" />
+        <!--android.shortcut.conversation   描述当前的intent的执行环境 目前google官方提供的只有这个-->
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+</shortcuts>
